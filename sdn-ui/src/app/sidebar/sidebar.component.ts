@@ -41,12 +41,10 @@ export class SidebarComponent implements OnInit {
 
   toggleSidebar() {
     if (this.toggle) {
-      console.log("opening sidebar");
       document.getElementById("mySidebar").style.width = "250px";
       // document.getElementById("main").style.marginLeft = "250px";
       this.toggle = false;
     } else {
-      console.log("closing sidebar");
       document.getElementById("mySidebar").style.width = "85px";
       // document.getElementById("main").style.marginLeft = "85px";
       this.toggle = true;
