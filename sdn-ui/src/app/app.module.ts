@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { HeaderComponent } from './header/header.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
@@ -45,6 +46,7 @@ import { PlayersTableComponent } from './players-table/players-table.component';
 @NgModule({
   declarations: [
     AppComponent,
+    SidebarComponent,
     HeaderComponent,
     ResultsComponent,
     LandingPageComponent,
