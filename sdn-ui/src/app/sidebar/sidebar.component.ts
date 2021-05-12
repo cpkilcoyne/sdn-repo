@@ -4,6 +4,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { AngularFirestore } from '@angular/fire/firestore/firestore';
 import { AuthService } from '../auth.service';
+// import { mini } from './mini';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,6 +13,7 @@ import { AuthService } from '../auth.service';
 })
 export class SidebarComponent implements OnInit {
   currentPath: string;
+  toggle = true;
   constructor(private auth: AuthService, private router: Router, public dialog: MatDialog) {
     this.router.events.subscribe((response: any) => {
       if (response instanceof NavigationEnd) {
@@ -34,7 +36,21 @@ export class SidebarComponent implements OnInit {
   }
 
   testOut() {
-    this.router.navigate(['']);
+    console.log('outside');
+  }
+
+  toggleSidebar() {
+    if (this.toggle) {
+      console.log("opening sidebar");
+      document.getElementById("mySidebar").style.width = "250px";
+      // document.getElementById("main").style.marginLeft = "250px";
+      this.toggle = false;
+    } else {
+      console.log("closing sidebar");
+      document.getElementById("mySidebar").style.width = "85px";
+      // document.getElementById("main").style.marginLeft = "85px";
+      this.toggle = true;
+    }
   }
 
   navigateToHomePage() {

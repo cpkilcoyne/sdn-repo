@@ -1,15 +1,16 @@
 <div class="sidebar-container">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+    <div id="mySidebar" class="sidebar" (mouseover)="toggleSidebar()" (mouseout)="toggleSidebar()">
         <button (click)="navigateToHomePage()" mat-button>
             <div class="sdn-logo">
-                <img src="../assets/img/sdn-logo.jpg" alt="sdn-logo" width="85" height="50">
+                <img src="../assets/img/sdn-logo.jpg" alt="sdn-logo" width="70" height="50">
             </div>
         </button>
         <a href="#"><i class="material-icons">public</i><span class="icon-text">My Dashboards</span></a><br>
         <a href="#"><i class="material-icons">feed</i><span class="icon-text">Top News</span></a><br>
         <a href="#"><i class="material-icons">local_fire_department</i><span class="icon-text">Matchups</span></a><br>
     </div>
+    <script src="./sidebar.component.toggle.js"></script>
 </div>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
