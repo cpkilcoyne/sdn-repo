@@ -21,3 +21,29 @@
     color: white;
 }
 
+.main-search {
+    margin-left: 100px;
+}
+
+.searchBox {
+    margin-top: 10px;
+    height: 22px;
+    font-size: 24px;
+}
+
+.go-button {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+  }
+
+.feedback-button {
+    color: white;
+    margin-top: 8px;
+    height: 30px;
+    width: 8px;
+}

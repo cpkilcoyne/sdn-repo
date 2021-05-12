@@ -1,8 +1,17 @@
 <div class="header-container">
-    <button *ngIf="currentPath !== '/'" (click)="navigateToHomePage()" mat-button>
-        <div class="search-bar">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <div class="main-search">
+        <input class="searchBox" type="text" style="size:200;" placeholder="Search..">
+        <button (click)="searchQuery()" class="go-button" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">Go</button>
+    </div>
+    <div style="margin-left: 550px;">
+    <button mat-button>
+        <div class="feedback-button">
+            <img src="../../assets/img/feedback.png" alt="feedback-image" width="35" height="35">
+            <span style="position: absolute; margin-top: 0px; margin-left: 10px;">Feedback</span>
         </div>
     </button>
+</div>
     <div *ngIf="currentPath == '/'"></div>
     <div *ngIf="currentPath !== '/'" class="profile-button">
         <button mat-button [matMenuTriggerFor]="menu">
