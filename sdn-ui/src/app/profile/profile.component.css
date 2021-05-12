@@ -1,0 +1,48 @@
+.profile-container {
+    margin-right: 25px;
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.profile-card {
+    border: solid 1px lightgray;
+    border-radius: 4px;
+    width: 30%
+}
+
+.picture img {
+    border-radius: 100%;
+    border: solid 1px #13597B;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.bio div, .header {
+    display: flex;
+    justify-content: center;
+}
+
+.bio div h2 {
+    margin-bottom: 0;
+}
+
+.profile-info {
+    width: 70%
+}
+
+.profile-button {
+    margin-top: 10px;
+}
+
+.search-list {
+    display: flex;
+    justify-content: flex-start;
+}

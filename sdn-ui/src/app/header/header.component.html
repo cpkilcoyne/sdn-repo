@@ -1,0 +1,20 @@
+<div class="header-container">
+    <button *ngIf="currentPath !== '/'" (click)="navigateToHomePage()" mat-button>
+        <div class="sdn-logo">
+            <img src="../assets/img/sdn-logo-blue.PNG" alt="sdn-logo" width="85" height="50">
+        </div>
+    </button>
+    <div *ngIf="currentPath == '/'"></div>
+    <div *ngIf="currentPath !== '/'" class="profile-button">
+        <button mat-button [matMenuTriggerFor]="menu">
+            <div class="user-profile">
+                <img src="../../assets/img/profile-placeholder.jpg" alt="profile-image" width="50" height="50">
+            </div>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button (click)="navigateToUserProfile()" mat-menu-item>Profile</button>
+            <button mat-menu-item>Log out</button>
+        </mat-menu>
+    </div>
+    <button class="login" *ngIf="currentPath == '/'" (click)="loginClick()" mat-button>Log in</button>
+</div>

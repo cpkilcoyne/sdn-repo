@@ -1,0 +1,51 @@
+<mat-card>
+    <div class="league">
+        <div class="text">League</div>
+        <div class="button">
+            <button (click)="toggleLeague()" *ngIf="!leagueButtonSelected" mat-icon-button><fa-icon [icon]="faChevronRight"></fa-icon></button>
+            <button (click)="toggleLeague()" *ngIf="leagueButtonSelected" mat-icon-button><fa-icon [icon]="faChevronDown"></fa-icon></button>
+        </div>
+    </div>
+    <div *ngIf="leagueButtonSelected" class="league-checkboxes">
+        <div class="nfl-container"><mat-checkbox checked=true>NFL</mat-checkbox></div>
+        <div class="nba-container"><mat-checkbox>NBA</mat-checkbox></div>
+        <div class="mlb-container"><mat-checkbox>MLB</mat-checkbox></div>
+        <div class="nhl-container"><mat-checkbox>NHL</mat-checkbox></div>
+    </div>
+    <mat-divider inset="true"></mat-divider>
+    <div class="team">
+        <div class="text">Team</div>
+        <div class="button">
+            <button (click)="toggleTeam()" *ngIf="!teamButtonSelected" mat-icon-button><fa-icon [icon]="faChevronRight"></fa-icon></button>
+            <button (click)="toggleTeam()" *ngIf="teamButtonSelected" mat-icon-button><fa-icon [icon]="faChevronDown"></fa-icon></button>
+        </div>
+    </div>
+    <div *ngIf="teamButtonSelected" class="league-checkboxes">
+        <div *ngFor="let team of teams" class="nfl-container"><mat-checkbox>{{team.Key}}</mat-checkbox></div>
+    </div>
+    <mat-divider inset="true"></mat-divider>
+    <div class="player">
+        <div class="text">Player</div>
+        <div class="button">
+            <button (click)="togglePlayer()" *ngIf="!playerButtonSelected" mat-icon-button><fa-icon [icon]="faChevronRight"></fa-icon></button>
+            <button (click)="togglePlayer()" *ngIf="playerButtonSelected" mat-icon-button><fa-icon [icon]="faChevronDown"></fa-icon></button>
+        </div>
+    </div>
+    <mat-divider inset="true"></mat-divider>
+    <div class="year">
+        <div class="text">Year</div>
+        <div class="button">
+            <button (click)="toggleYear()" *ngIf="!yearButtonSelected" mat-icon-button><fa-icon [icon]="faChevronRight"></fa-icon></button>
+            <button (click)="toggleYear()" *ngIf="yearButtonSelected" mat-icon-button><fa-icon [icon]="faChevronDown"></fa-icon></button>
+        </div>
+    </div>
+    <mat-divider inset="true"></mat-divider>
+    <div class="stats">
+        <div class="text">Stats</div>
+        <div class="button">
+            <button (click)="toggleStats()" *ngIf="!statsButtonSelected" mat-icon-button><fa-icon [icon]="faChevronRight"></fa-icon></button>
+            <button (click)="toggleStats()" *ngIf="statsButtonSelected" mat-icon-button><fa-icon [icon]="faChevronDown"></fa-icon></button>
+        </div>
+    </div>
+    <mat-divider inset="true"></mat-divider>
+</mat-card>

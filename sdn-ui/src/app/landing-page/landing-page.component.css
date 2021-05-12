@@ -1,0 +1,64 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.main-search {
+    display: flex;
+    justify-content: center;
+}
+
+.main-search-form {
+    width: 515px;
+}
+
+.main-header-text {
+    display: flex;
+    justify-content: center;
+}
+
+.go-button {
+    background-color: #13597B;
+    margin-left: 15px;
+    margin-top: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+mat-chip {
+    background-color: #0B2028!important;
+    color: whitesmoke!important;
+    margin-top: 8px!important;
+    margin-bottom: 8px!important;
+}
+
+.trending-search-chips {
+    display: flex;
+    justify-content: center;
+    max-width: 1050px;
+    flex-wrap: wrap;
+}
+
+.trending, .sports {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.trending-topics-header {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.sports .mat-mini-fab { 
+    height: 70px;
+    width: 70px;
+    font-size: 20px;
+    background-color: white;
+    color: #13597B;
+    border: 1px solid #13597B;
+    margin-right: 8px;
+    margin-left: 8px;
+}

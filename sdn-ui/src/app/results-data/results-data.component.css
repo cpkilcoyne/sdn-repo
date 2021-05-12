@@ -1,0 +1,51 @@
+.results-data-container {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 32px;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.header-text {
+    display: flex;
+}
+
+.main-search {
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.chips {
+    margin-top: 10px;
+}
+
+mat-chip {
+    background-color: #0B2028!important;
+    color: whitesmoke!important;
+}
+
+.teams-players .mat-icon-button {
+    background-color: #0B2028;
+}
+
+.teams-players button {
+    background-color:#0B2028;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.teams-players {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

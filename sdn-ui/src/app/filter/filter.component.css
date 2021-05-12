@@ -1,0 +1,40 @@
+mat-card {
+    background-color: #13597B;
+    color: white;
+    margin-left: -10px;
+}
+
+.mat-divider {
+    border-top-color: white;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+.league, .team, .player, .year, .stats {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+}
+
+.mat-checkbox-frame {
+    border-color: white!important;
+}
+
+.league-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.league-checkboxes div {
+    margin-left: 4px;
+    margin-right: 4px;
+}

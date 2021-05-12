@@ -1,0 +1,45 @@
+<div class="results-data-container">
+    <div class="header">
+        <div class="header-text">
+          <h1>NFL</h1>
+        </div>
+        <mat-divider></mat-divider>
+        <div>
+          <button (click)="backToLandingPage()"*ngIf="viewStatus === 'list'" mat-icon-button aria-label="Example icon button with a home icon">
+            <mat-icon>chevron_left</mat-icon>
+          </button>
+          <button (click)="backToList()" *ngIf="viewStatus !== 'list'" mat-icon-button aria-label="Example icon button with a home icon">
+            <mat-icon>chevron_left</mat-icon>
+          </button>
+          <button disabled *ngIf="viewStatus === 'list'" mat-icon-button aria-label="Example icon button with a menu icon">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+          <button disabled *ngIf="viewStatus !== 'list'" mat-icon-button aria-label="Example icon button with a menu icon">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+        </div>
+        <div *ngIf="viewStatus === 'list'" class="teams-players">
+          <button mat-raised-button (click)="onTeamsClick()" >Teams</button>
+          <button mat-raised-button (click)="onPlayerClick()">Players</button>
+        </div>
+    </div>
+    <div *ngIf="!loaded">
+      <mat-spinner diameter="70"></mat-spinner>
+    </div>
+    <div *ngIf="loaded && (viewStatus === 'list')" class="table">
+      <div *ngIf="selectedFilter === 'players'">
+          <app-players-table [inheritedDataSource]="dataSource"></app-players-table>
+      </div>
+      <div *ngIf="selectedFilter === 'teams'">
+        <div>
+          <app-teams-table [inheritedDataSource]="teamsDataSource"></app-teams-table>
+      </div>
+      </div>
+      </div>
+      <div *ngIf="viewStatus === 'profile'">
+        <app-stats-profile></app-stats-profile>
+      </div>
+      <div *ngIf="viewStatus === 'team-profile'">
+        <app-team-profile></app-team-profile>
+      </div>
+</div>

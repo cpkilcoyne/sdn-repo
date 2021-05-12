@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-button {
+    background-color: #0B2028;
+    color: white;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}

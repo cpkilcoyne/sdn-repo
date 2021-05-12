@@ -1,0 +1,23 @@
+.header-container {
+    background-color: #13597B;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-container .user-profile img {
+    border-radius: 100%;
+}
+
+.header-container div {
+    height: 60px;
+}
+
+.login {
+    color: white;
+}
+

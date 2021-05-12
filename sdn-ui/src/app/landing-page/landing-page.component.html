@@ -1,0 +1,35 @@
+<div class="logo">
+    <img src="../assets/img/sdn-logo.jpg" alt="sdn-logo" width="260" height="200">
+  </div>
+  <div class="main-search">
+    <form class="example-form">
+      <mat-form-field appearance="outline" class="main-search-form">
+        <mat-label>Search for anything...</mat-label>
+        <input type="text"
+               placeholder="Pick one"
+               aria-label="Number"
+               matInput
+               [matAutocomplete]="auto">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+          <mat-option *ngFor="let option of filteredOptions" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+    <button (click)="searchQuery()" class="go-button" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">Go</button>
+  </div>
+  <div class="sports">
+    <button (click)="navigateToNFL()" mat-mini-fab aria-label="Example icon button with a menu icon">NFL</button>
+    <button mat-mini-fab aria-label="Example icon button with a menu icon">NBA</button>
+    <button mat-mini-fab aria-label="Example icon button with a menu icon">NHL</button>
+    <button mat-mini-fab aria-label="Example icon button with a menu icon">MLB</button>
+  </div>
+  <div class="trending-topics-header"><h2>Trending Topics</h2></div>
+  <div class="trending">
+    <div class="trending-search-chips">
+      <mat-chip-list *ngFor="let topic of trendingTopics">
+        <mat-chip>{{topic}}</mat-chip>
+      </mat-chip-list>
+    </div>
+  </div>

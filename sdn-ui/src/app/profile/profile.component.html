@@ -1,0 +1,25 @@
+<div class="profile-container">
+    <mat-card>
+        <div class="picture">
+            <img src="../../assets/img/profile-placeholder.jpg" alt="profile-image" width="200" height="200">
+        </div>
+        <div class="bio">
+            <div><h2>Andrew Briglia</h2></div>
+            <div><h2>adbriglia@gmail.com</h2></div>
+            <div class="profile-button"><button mat-stroked-button>Edit Profile</button></div>
+        </div>
+    </mat-card>
+    <div class="profile-info">
+        <div class="header"><h1>Saved Searches</h1></div>
+        <mat-divider inset="true"></mat-divider>
+        <div class="saved-searches-list">
+            <mat-selection-list #shoes [multiple]="false">
+                <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe">
+                    <div class="search-list">
+                        <div><i class="fa fa-angle-right"></i></div><div>{{shoe}}</div>
+                    </div>
+                </mat-list-option>
+              </mat-selection-list>
+        </div>
+    </div>
+</div>

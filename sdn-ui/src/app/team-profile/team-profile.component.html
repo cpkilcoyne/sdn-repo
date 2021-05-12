@@ -1,0 +1,44 @@
+<div class="stats-profile-container">
+    <div class="sports-profile-header-container">
+        <div class="team-logo">
+            <img width="175px" height="175px" alt="logo" src={{team.WikipediaLogoUrl}}>
+        </div>
+        <div class="sports-profile-header">
+            <div class="name"><h1>{{team.YahooName}}</h1></div>
+            <mat-divider></mat-divider>
+            <div class="bio">
+                <div class="bio-container">
+                    <div class="bio-box">
+                        <div class="header">Weight</div>
+                        <div class="value"></div>
+                    </div>
+                    <div class="bio-box">
+                        <div class="header">Age</div>
+                        <div class="value"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="year-dropdown">
+            <div class="form">
+                <mat-label>Year</mat-label>
+                <mat-select [(value)]="selected">
+                  <mat-option>None</mat-option>
+                  <mat-option value="option1">2021</mat-option>
+                  <mat-option value="option2">2020</mat-option>
+                  <mat-option value="option3">2019</mat-option>
+                </mat-select>
+            </div>
+        </div>
+    </div>
+    <div class="sports-profile-data">
+        <div class="data-table"><h1>Players</h1><mat-divider></mat-divider></div>
+        <div class="data-table"><h1>Stats</h1></div>
+        <div class="data-table"><h1>Stats</h1></div>
+        <div class="data-table"><h1>Stats</h1></div>
+        <div class="data-table"><h1>Stats</h1></div>
+        <div class="data-table"><h1>Stats</h1></div>
+        <div class="data-table"><h1>Stats</h1></div>
+        <div class="data-table"><h1>Stats</h1></div>
+    </div>
+</div>
