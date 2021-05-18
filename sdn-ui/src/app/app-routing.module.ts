@@ -6,7 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { StatsProfileComponent } from './stats-profile/stats-profile.component';
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent },
+  { path: '', component: ResultsComponent },
   { path: 'results', component: ResultsComponent },
   { path: 'profile', component: ProfileComponent},
   { path: 'player-stats', component: StatsProfileComponent}

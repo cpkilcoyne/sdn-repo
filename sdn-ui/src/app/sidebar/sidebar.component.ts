@@ -31,17 +31,9 @@ export class SidebarComponent implements OnInit {
     })
   }
 
-  testIn() {
-    this.router.navigate(['']);
-  }
-
-  testOut() {
-    console.log('outside');
-  }
-
   toggleSidebar() {
     if (this.toggle) {
-      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("mySidebar").style.width = "235px";
       // document.getElementById("main").style.marginLeft = "250px";
       this.toggle = false;
     } else {

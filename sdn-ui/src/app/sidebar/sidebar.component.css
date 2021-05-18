@@ -46,6 +46,11 @@ main .sidebar {
   margin-right: 30px;
 }
 
+.material-icons,
+.dashboard-icon-text {
+  vertical-align: middle;
+}
+
 #main {
   padding: 16px;
   margin-left: 85px;
