@@ -4,7 +4,6 @@ import { Router, NavigationEnd } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { AngularFirestore } from '@angular/fire/firestore/firestore';
 import { AuthService } from '../auth.service';
-// import { mini } from './mini';
 
 @Component({
   selector: 'app-sidebar',

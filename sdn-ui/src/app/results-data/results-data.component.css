@@ -7,6 +7,7 @@
 
 .header h1 {
     font-size: 32px;
+    font-weight: 700;
 }
 
 table {
@@ -48,4 +49,37 @@ mat-chip {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+}
+
+.add-circle-button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 16px;
+    border-color: lightgray;
+}
+
+.download-button {
+    position: absolute;
+    right: 220px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    border-color: lightgray;
+}
+
+.copy-button {
+    position: absolute;
+    right: 120px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    border-color: lightgray;
+}
+
+.delete-button {
+    position: absolute;
+    background-color: rgb(255, 113, 113);
+    right: 20px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    border-color: lightgray;
 }
