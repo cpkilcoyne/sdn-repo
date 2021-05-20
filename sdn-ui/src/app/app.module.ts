@@ -41,6 +41,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { MatSortModule } from '@angular/material/sort';
 import { PlayersTableComponent } from './players-table/players-table.component';
+// import { TabulatorDataComponent } from './tabulator-data/tabulator-data.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { PlayersTableComponent } from './players-table/players-table.component';
     TeamProfileComponent,
     LoginComponent,
     PlayersTableComponent
+    // TabulatorDataComponent
   ],
   imports: [
     BrowserModule,

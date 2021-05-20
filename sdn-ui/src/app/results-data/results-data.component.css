@@ -57,6 +57,7 @@ mat-chip {
     height: 30px;
     font-size: 16px;
     border-color: lightgray;
+    border-radius: 7px;
 }
 
 .download-button {
@@ -65,6 +66,7 @@ mat-chip {
     margin-bottom: 7px;
     font-size: 20px;
     border-color: lightgray;
+    border-radius: 7px;
 }
 
 .copy-button {
@@ -73,6 +75,7 @@ mat-chip {
     margin-bottom: 7px;
     font-size: 20px;
     border-color: lightgray;
+    border-radius: 7px;
 }
 
 .delete-button {
@@ -82,4 +85,5 @@ mat-chip {
     margin-bottom: 7px;
     font-size: 20px;
     border-color: lightgray;
+    border-radius: 7px;
 }
